@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {  animationsList } from '../../app/animations';
+import { FaqPage } from '../faq/faq';
 
 @Component({
   selector: 'page-home',
@@ -10,6 +11,8 @@ import {  animationsList } from '../../app/animations';
 export class HomePage {
   isOpen: boolean;
   startAnim:string;
+  faq = FaqPage;
+
   constructor(public navCtrl: NavController) {
 
   }

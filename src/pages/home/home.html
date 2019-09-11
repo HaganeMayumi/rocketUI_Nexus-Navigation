@@ -15,7 +15,7 @@
   <div class="rocketui-special-thanks">
     <div>
       <h2>Nexus Navigation</h2>
-      <p>Suggestions or tips, please contact us. <br>Send us an email for better support</p>
+      <p>Texto texto texto</p>
     </div>
   </div>
 </ion-content>
@@ -27,13 +27,13 @@
             <img src="assets/imgs/user.jpg" />
         </figure>
         <ion-list class="menu-nexus-list" no-lines padding [ngClass]="startAnim" *ngIf="isOpen" >
-            <button ion-item>Home</button>
-            <button ion-item>My Profile</button>
-            <button ion-item>Downloads</button>
-            <button ion-item>Helpdesk</button>
-            <button ion-item>Photos</button>
-            <button ion-item>Settings</button>
-            <button ion-item>Logout</button>
+          <button ion-item><ion-icon name = "bicycle"></ion-icon>  Delivery</button>
+          <button ion-item><ion-icon name="md-barcode"></ion-icon>  Auditoria</button>
+          <button ion-item><ion-icon name="chatboxes"></ion-icon>  Chat Clientes</button>
+          <button ion-item><ion-icon name="md-contact"></ion-icon>  Usuário</button>
+          <button ion-item><ion-icon name="paper"></ion-icon>  Histórico</button>
+          <button ion-item [navPush] = "faq"><ion-icon name="help-circle"></ion-icon>  FAQ</button>
+          <button ion-item><ion-icon name="log-out"></ion-icon>  Sair</button>
         </ion-list>
     </div>
   </div>
