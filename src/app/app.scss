@@ -21,4 +21,16 @@ $color-two: #8C19FF;
     font-size: 1.8rem;
     text-decoration: none;
   }
+
+}
+ion-content {
+  background: $app-background;
+}
+
+@font-face{
+  font-family: 'Questrial';
+  src:url('../assets/fonts/Questrial-Regular.ttf');
+}
+*{
+  font-family: Questrial;
 }

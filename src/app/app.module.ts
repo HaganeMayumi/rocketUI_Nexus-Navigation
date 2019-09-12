@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { FaqPage } from '../pages/faq/faq';
+import { ChatPage } from '../pages/chat/chat';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     FaqPage,
+    ChatPage,
   ],
   imports: [
     BrowserModule,
@@ -24,6 +26,7 @@ import { FaqPage } from '../pages/faq/faq';
     MyApp,
     HomePage,
     FaqPage,
+    ChatPage
   ],
   providers: [
     StatusBar,

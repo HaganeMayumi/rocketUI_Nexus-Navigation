@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {  animationsList } from '../../app/animations';
 import { FaqPage } from '../faq/faq';
+import { ChatPage } from '../chat/chat';
 
 @Component({
   selector: 'page-home',
@@ -28,5 +29,11 @@ export class HomePage {
   animEnd(e){
     console.log(e);
     this.startAnim='animate-running';
+  }
+  Faq(){
+    this.navCtrl.push(FaqPage);
+  }
+  Chat(){
+    this.navCtrl.push(ChatPage);
   }
 }
