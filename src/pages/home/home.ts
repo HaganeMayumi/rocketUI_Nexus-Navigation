@@ -12,7 +12,6 @@ import { ChatPage } from '../chat/chat';
 export class HomePage {
   isOpen: boolean;
   startAnim:string;
-  faq = FaqPage;
 
   constructor(public navCtrl: NavController) {
 

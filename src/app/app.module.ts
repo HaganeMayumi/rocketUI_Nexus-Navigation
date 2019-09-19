@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { FaqPage } from '../pages/faq/faq';
 import { ChatPage } from '../pages/chat/chat';
+import { PergfreqPage } from '../pages/pergfreq/pergfreq';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ChatPage } from '../pages/chat/chat';
     HomePage,
     FaqPage,
     ChatPage,
+    PergfreqPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { ChatPage } from '../pages/chat/chat';
     MyApp,
     HomePage,
     FaqPage,
-    ChatPage
+    ChatPage,
+    PergfreqPage
   ],
   providers: [
     StatusBar,

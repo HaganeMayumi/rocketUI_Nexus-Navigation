@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { PergfreqPage } from '../pergfreq/pergfreq';
 
 /**
- * Generated class for the FaqPage page.
+ * Generated class for the PergfreqPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,19 +10,16 @@ import { PergfreqPage } from '../pergfreq/pergfreq';
 
 @IonicPage()
 @Component({
-  selector: 'page-faq',
-  templateUrl: 'faq.html',
+  selector: 'page-pergfreq',
+  templateUrl: 'pergfreq.html',
 })
-export class FaqPage {
+export class PergfreqPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad FaqPage');
+    console.log('ionViewDidLoad PergfreqPage');
   }
-  
-  Perg(){
-    this.navCtrl.push(PergfreqPage);
-  }
+
 }

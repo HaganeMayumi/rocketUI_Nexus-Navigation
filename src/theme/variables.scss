@@ -41,7 +41,8 @@ $colors: (
   dark:       #222,
   vermelho:   #9e2a2a,
   claro:      #FFFF84,
-  amarelo:    yellow
+  amarelo:    yellow,
+  rosa:       #FFBDBD
 );
 
 $app-background: linear-gradient(to bottom, color($colors, light) 0%, color($colors, vermelho) 100%);
