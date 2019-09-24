@@ -9,7 +9,12 @@ import { HomePage } from '../pages/home/home';
 import { FaqPage } from '../pages/faq/faq';
 import { ChatPage } from '../pages/chat/chat';
 import { PergfreqPage } from '../pages/pergfreq/pergfreq';
-import { ChatInPage } from '../pages/chat-in/chat-in'
+import { ChatInPage } from '../pages/chat-in/chat-in';
+import { LoginPage} from '../pages/login/login';
+import{AuditoriaPage} from '../pages/auditoria/auditoria';
+import{UsuariosPage} from '../pages/usuarios/usuarios';
+import{HistoricoPage} from '../pages/historico/historico';
+import{ProdutosPage} from'../pages/produtos/produtos';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,13 @@ import { ChatInPage } from '../pages/chat-in/chat-in'
     FaqPage,
     ChatPage,
     PergfreqPage,
-    ChatInPage
+    ChatInPage,
+    LoginPage,
+    AuditoriaPage,
+    UsuariosPage,
+    HistoricoPage,
+    ProdutosPage
+
   ],
   imports: [
     BrowserModule,
@@ -32,7 +43,13 @@ import { ChatInPage } from '../pages/chat-in/chat-in'
     FaqPage,
     ChatPage,
     PergfreqPage,
-    ChatInPage
+    ChatInPage,
+    LoginPage,
+    AuditoriaPage,
+    UsuariosPage,
+    HistoricoPage,
+    ProdutosPage
+    
   ],
   providers: [
     StatusBar,

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ChatInPage } from '../chat-in/chat-in';
 import { AlertController } from 'ionic-angular';
+import {  animationsList } from '../../app/animations';
 
 /**
  * Generated class for the ChatPage page.
@@ -14,10 +15,25 @@ import { AlertController } from 'ionic-angular';
 @Component({
   selector: 'page-chat',
   templateUrl: 'chat.html',
+  animations: animationsList
 })
 export class ChatPage {
+  isOpen: boolean;
+  startAnim:string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
+  }
+
+  openNexus(){
+    this.isOpen = !this.isOpen;
+  }
+  animStart(e){
+    console.log(e);
+
+  }
+  animEnd(e){
+    console.log(e);
+    this.startAnim='animate-running';
   }
 
   ionViewDidLoad() {
