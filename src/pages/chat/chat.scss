@@ -8,6 +8,16 @@ page-chat {
   }
   ion-img{
     position: absolute;
-    left: 5%;
+    left: 10%;
+    bottom: 25%;
+  }
+  .item-chat{
+    background: linear-gradient(#f2d06c, #da5a41);
+  }
+  .botao-chat{
+    background: linear-gradient(#90E8AA, #32db64);
+  }
+  ion-toggle{
+    color: green;
   }
 }

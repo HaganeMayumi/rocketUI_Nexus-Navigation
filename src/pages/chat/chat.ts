@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ChatInPage } from '../chat-in/chat-in';
+import { AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the ChatPage page.
@@ -15,11 +17,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ChatPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ChatPage');
   }
+  ChatIn(){
+    this.navCtrl.push(ChatInPage);
+  }
 
+  showAlert() {
+    const alert = this.alertCtrl.create({
+      title: 'Chat Encerrado!',
+      subTitle: 'O chat com cliente foi encerrado',
+      buttons: ['OK']
+    });
+    alert.present();
+  }
 }
+

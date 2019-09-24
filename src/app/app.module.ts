@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { FaqPage } from '../pages/faq/faq';
 import { ChatPage } from '../pages/chat/chat';
 import { PergfreqPage } from '../pages/pergfreq/pergfreq';
+import { ChatInPage } from '../pages/chat-in/chat-in'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PergfreqPage } from '../pages/pergfreq/pergfreq';
     HomePage,
     FaqPage,
     ChatPage,
-    PergfreqPage
+    PergfreqPage,
+    ChatInPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import { PergfreqPage } from '../pages/pergfreq/pergfreq';
     HomePage,
     FaqPage,
     ChatPage,
-    PergfreqPage
+    PergfreqPage,
+    ChatInPage
   ],
   providers: [
     StatusBar,

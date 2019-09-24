@@ -12,35 +12,50 @@
     </ion-title>
   </ion-navbar>
 
+  <ion-item>
+    <ion-toggle disabled checked="false"></ion-toggle>
+  </ion-item>
+
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <ion-searchbar placeholder="Pesquisar Cliente"></ion-searchbar>
 
   <br>
 
   <ion-list>
+    <ion-item>
+      <ion-card class="item-chat" style="border-radius: 10px">
+        <ion-card-header>Cliente Fulano</ion-card-header>
+        <ion-avatar>
+          <ion-img src='assets/imgs/user.jpg'></ion-img>
+        </ion-avatar>
+        <ion-buttons end>
+          <button ion-button color="secondary" style="border-radius: 10px" class="botao-chat" (click)="ChatIn()">
+            <ion-icon name="text"></ion-icon>
+          </button>
+          <button ion-button color="secondary" style="border-radius: 10px" class="botao-chat" (click)="showAlert()">
+            <ion-icon ios="ios-close-circle" md="md-close-circle"></ion-icon>
+          </button>
+        </ion-buttons>
+      </ion-card>
+    </ion-item>
 
-    <button ion-button block color="dark" outline style="height: 50px">
-      <ion-label>Cliente Ciclano</ion-label>
-      <ion-img src='assets/imgs/user.jpg' style="zoom: 2.0; border-radius: 10px">
-      </ion-img>
-    </button>
-    
-    <br>
-
-    <button ion-button block color="dark" outline style="height: 50px">
-      <ion-label>Cliente Ciclano</ion-label>
-      <ion-img src='assets/imgs/user.jpg' style="zoom: 2.0; border-radius: 10px">
-      </ion-img>
-    </button>
-
-    <br>
-    
-    <button ion-button block color="dark" outline style="height: 50px">
-      <ion-label>Cliente Ciclano</ion-label>
-      <ion-img src='assets/imgs/user.jpg' style="zoom: 2.0; border-radius: 10px">
-      </ion-img>
-    </button>
+    <ion-item>
+      <ion-card class="item-chat" style="border-radius: 10px">
+        <ion-card-header>Cliente Ciclano</ion-card-header>
+        <ion-avatar>
+          <ion-img src='assets/imgs/user.jpg'></ion-img>
+        </ion-avatar>
+        <ion-buttons end>
+          <button ion-button color="secondary" style="border-radius: 10px" class="botao-chat" (click)="ChatIn()">
+            <ion-icon name="text"></ion-icon>
+          </button>
+          <button ion-button color="secondary" style="border-radius: 10px" class="botao-chat" (click)="showAlert()">
+            <ion-icon ios="ios-close-circle" md="md-close-circle"></ion-icon>
+          </button>
+        </ion-buttons>
+      </ion-card>
+    </ion-item>
   </ion-list>
 </ion-content>
